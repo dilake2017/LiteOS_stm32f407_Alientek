@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp
+"stn32f407_explorer_hal\startup_stm32f407xx.o"
+"stn32f407_explorer_hal\main.o"
+"stn32f407_explorer_hal\gpio.o"
+"stn32f407_explorer_hal\usart.o"
+"stn32f407_explorer_hal\stm32f4xx_it.o"
+"stn32f407_explorer_hal\stm32f4xx_hal_msp.o"
+"stn32f407_explorer_hal\stm32f4xx_hal_tim.o"
+"stn32f407_explorer_hal\stm32f4xx_hal_tim_ex.o"
+"stn32f407_explorer_hal\stm32f4xx_hal_uart.o"
+"stn32f407_explorer_hal\stm32f4xx_hal_rcc.o"
+"stn32f407_explorer_hal\stm32f4xx_hal_rcc_ex.o"
+"stn32f407_explorer_hal\stm32f4xx_hal_flash.o"
+"stn32f407_explorer_hal\stm32f4xx_hal_flash_ex.o"
+"stn32f407_explorer_hal\stm32f4xx_hal_flash_ramfunc.o"
+"stn32f407_explorer_hal\stm32f4xx_hal_gpio.o"
+"stn32f407_explorer_hal\stm32f4xx_hal_dma_ex.o"
+"stn32f407_explorer_hal\stm32f4xx_hal_dma.o"
+"stn32f407_explorer_hal\stm32f4xx_hal_pwr.o"
+"stn32f407_explorer_hal\stm32f4xx_hal_pwr_ex.o"
+"stn32f407_explorer_hal\stm32f4xx_hal_cortex.o"
+"stn32f407_explorer_hal\stm32f4xx_hal.o"
+"stn32f407_explorer_hal\stm32f4xx_hal_exti.o"
+"stn32f407_explorer_hal\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "stn32f407_explorer_hal\stn32f407_explorer_hal.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "stn32f407_explorer_hal.map" -o stn32f407_explorer_hal\stn32f407_explorer_hal.axf
