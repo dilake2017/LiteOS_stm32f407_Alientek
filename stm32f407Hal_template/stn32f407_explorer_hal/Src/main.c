@@ -103,6 +103,7 @@ int main(void)
     /* USER CODE END WHILE */
 		printf("welcome to stm32f407_cube\r\n..");
 		HAL_Delay(1000);
+		HAL_GPIO_TogglePin(LED0_GPIO_Port,LED0_Pin);
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
